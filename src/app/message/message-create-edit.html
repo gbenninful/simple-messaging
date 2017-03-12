@@ -1,0 +1,40 @@
+<div class="container">
+
+  <form ng-submit="vm.message.sendMessage()">
+
+    <div class="row">
+      <div class="small-2 column">
+        <label for="fullName" class="left"> Full Name: </label>
+      </div>
+      <div class="small-10 column">
+        <input type="text" id="fullName" placeholder="Full Name" ng-model="vm.message.sentBy" ng-required="vm.required">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="small-2 column">
+        <label for="messageTitle" class="left"> Message Title: </label>
+      </div>
+      <div class="small-10 column">
+        <input type="text" id="messageTitle" placeholder="Title" ng-model="vm.message.title" ng-required="vm.required">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="small-2 column">
+        <label for="messageDetails" class="left"> Message Details: </label>
+      </div>
+      <div class="small-10 column">
+        <textarea placeholder="Message Details" id="messageDetails" ng-model="vm.message.details" ng-required="vm.required"></textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="small-10 column">
+        <input type="submit" class="button" value="Submit">
+      </div>
+    </div>
+
+  </form>
+
+</div>
